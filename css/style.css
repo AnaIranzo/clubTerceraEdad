@@ -18,6 +18,10 @@ form *{
     white-space: pre-line;
 }
 
+.button{
+    width: 100px;
+}
+
 /* fieldset{
     display: grid;
     grid-template-columns: 1fr 1fr;
