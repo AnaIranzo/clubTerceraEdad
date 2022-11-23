@@ -5,13 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document2</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+    <nav>
+        <a href="./index.html">Index</a>
+        
+    </nav>
+    
     <header>
         <h1>Investigación de ladronzuelos</h1>
     </header>
     <main>
 <h2>¿¿Ha oido usted de algún robo de bicicletas??</h2>
+<form action="">
 
 <label for="date">¿Cuando ocurrieron los acontecimientos?</label>
 <input type="date" id="date" name="date">
@@ -23,10 +30,10 @@
 <input type="text" id="color" name="color">
 
 <label for="price">¿Cuanto cree que costaba la bicicleta? (€)</label>
-<input type="range" id="price" name="price">
+<input type="range" id="price" name="price" min="0" max="1000" step="50">
 
 <label for="kind">¿Qué tipo de bicicleta era?</label>
-<select id="kind">
+<select id="kind" tabindex="0">
     <optgroup label="Paseo">
         <option>Señorial</option>
         <option>Anti-plebeyos</option>
@@ -44,82 +51,70 @@
     </optgroup>
 </select>
 
+
+<div class="accs">
 <label for="accessories">¿Qué accesorios tenía la bicicleta?</label>
-<input id="accessories" name="accessories" type="checkbox" value="Ruedines">
-<input id="accessories" name="accessories" type="checkbox" value="Pegatinas">
-<input id="accessories" name="accessories" type="checkbox" value="Cestita">
-<input id="accessories" name="accessories" type="checkbox" value="Bomba de aire">
-<input id="accessories" name="accessories" type="checkbox" value="Timbre">
-<input id="accessories" name="accessories" type="checkbox" value="Foco">
 
+<label for="accessories">Ruedines</label><input id="accesories1" name="accessories1" type="checkbox" value="Ruedines">
+<label for="accessories">Pegatina</label><input id="accesories2" name="accessories2" type="checkbox" value="Pegatinas">
+<label for="accessories">Cestita</label><input id="accessories3" name="accessories3" type="checkbox" value="Cestita">
+<label for="accessories">Bomba de aire</label><input id="accessories4" name="accessories4" type="checkbox" value="Bomba de aire">
+<label for="accessories">Timbre</label><input id="accessories5" name="accessories5" type="checkbox" value="Timbre">
+<label for="accessories">Foco</label><input id="accessories6" name="accessories6" type="checkbox" value="Foco">
+</div>
 
+    <fieldset>
+      <legend>¿Qué marca era?</legend>
+      
 
+<input type="radio" id="spc" name="spc">
+<label for="spc">Specialized</label><br>
+<input type="radio" id="trek" name="trek">
+<label for="trek">Trek</label><br>
+<input type="radio" id="merida" name="merida">
+<label for="merida">Merida</label><br>
+<input type="radio" id="scott" name="scott">
+<label for="scott">Scott</label><br>
+<input type="radio" id="giant" name="giant">
+<label for="giant">Giant</label><br>
+<input type="radio" id="cube" name="cube">
+<label for="cube">Cube</label><br>
+<input type="radio" id="lapierre" name="lapierre">
+<label for="lapierre">Lapierre</label><br>
+<input type="radio" id="orbea" name="orbea">
+<label for="orbea">Orbea</label><br>
+<input type="radio" id="cannon" name="cannon">
+<label for="cannon">Cannondale</label><br>
+<input type="radio" id="bmc" name="bmc">
+<label for="bmc">Bmc</label><br>
+<input type="radio" id="canyon" name="canyon">
+<label for="cayon">Canyon</label><br>
+<input type="radio" id="look" name="look">
+<label for="look">Look</label><br>
+<input type="radio" id="protek" name="protek">
+<label for="protek">Protek</label><br>
+<input type="radio" id="megamo" name="megamo">
+<label for="megamo">Megamo</label><br>
+<input type="radio" id="pinarello" name="pinarello">
+<label for="pinarello">Pinarello</label><br>
+<input type="radio" id="bianchi" name="bianchi">
+<label for="bianchi">Bianchi</label><br>
+<input type="radio" id="bh" name="bh">
+<label for="bh">Bh</label><br>
+<input type="radio" id="factor" name="factor">
+<label for="factor">Factor</label><br>
+<input type="radio" id="ghost" name="ghost">
+<label for="ghost">Ghost</label><br>
+<input type="radio" id="cervelo" name="cervelo">
+<label for="cervelo">Cervélo</label><br>
+<input type="radio" id="argon" name="argon">
+<label for="argon">Argon</label>
 
+</fieldset>
+</form>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<label for="brand">¿Qué marca era?:</label>
-
-<input type="radio">
-<label for="" id=""></label>
-<input type="radio">
-<label for=""></label>
-<input type="radio">
-<label for=""></label>
-<input type="radio">
-<label for=""></label>
-<input type="radio">
-<label for=""></label>
-<input type="radio">
-<label for=""></label>
-<input type="radio">
-<label for=""></label>
-<input type="radio">
-<label for=""></label>
-<input type="radio">
-<label for=""></label>
-<input type="radio">
-<label for=""></label>
-<input type="radio">
-<label for=""></label>
-<input type="radio">
-<label for=""></label>
-<input type="radio">
-<label for=""></label>
-<input type="radio">
-<label for=""></label>
-<input type="radio">
-<label for=""></label>
-<input type="radio">
-<label for=""></label>
-<input type="radio">
-<label for=""></label>
-<input type="radio">
-<label for=""></label>
-<input type="radio">
-<label for=""></label>
-<input type="radio">
-<label for=""></label>
-<input type="radio">
-<label for=""></label>
-
-
-
+<input type="submit" value="Enviar">
+<input type="reset">
     </main>
     <footer>
 

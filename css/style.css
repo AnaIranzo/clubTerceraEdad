@@ -1,0 +1,24 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 5px;
+}
+
+
+form{
+    display:flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+form *{
+    padding: 5px;
+}
+
+.accs{
+    white-space: pre-line;
+}
+
+/* fieldset{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+} */
